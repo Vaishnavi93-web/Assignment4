@@ -1,1 +1,308 @@
 # Assignment4
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="web.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>MY WEBSITE LOGO</h1>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p class="tagline">I love photography</p>
+    <div class="about-content">
+      <img
+        src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?cs=srgb&dl=pexels-olly-712513.jpg&fm=jpg"
+        alt="profile photo" />
+      <div class="about-text">
+        <p>Hello! I'm a passionate photographer and web designer...
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut natus minus cum nemo atque amet maxime ipsa est
+          excepturi nam fugiat vitae modi quod quas quos sed consectetur, eum recusandae rem optio aut animi inventore.
+          Ipsa sequi debitis rerum fugiat minus? Provident quibusdam fuga facere sit id doloribus maxime tenetur!</p>
+
+      </div>
+    </div>
+    <div class="skills">
+      <p><strong>Skills:</strong></p>
+      <div class="skill-bar">
+        <span>Photography</span>
+        <div class="bar">
+          <div class="bar-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <span>Web Design</span>
+        <div class="bar">
+          <div class="bar-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <span>Photoshop</span>
+        <div class="bar">
+          <div class="bar-fill" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section id="portfolio" class="section portfolio"></section>
+  <div class="stats">
+    <div><h3>14+</h3><p>Partners</p></div>
+    <div><h3>55+</h3><p>Projects Done</p></div>
+    <div><h3>89+</h3><p>Happy Clients</p></div>
+    <div><h3>150+</h3><p>Meetings</p></div>
+  </div>
+      <div class="background">
+       <div class="overlay"> 
+        <div class="content">
+          <h2>Portfolio</h2>
+      </div>
+      </div>
+      </div>
+      </section>
+      
+
+  <section id="portfolio" class="section portfolio">
+    <h2>MY WORK</h2>
+    <p>Here are some of my latest loreum work</p>
+    <div class="grid">
+      <img src="https://www.pixelstalk.net/wp-content/uploads/2016/04/Nature-water-wallpaper-widescreen.jpg"
+        alt="img1" />
+      <img src="https://th.bing.com/th/id/OIP.ep7BgL70E10Y7QQJPBJFIgHaE8?rs=1&pid=ImgDetMain" alt="img2" />
+      <img src="https://d3d0lqu00lnqvz.cloudfront.net/media/media/897b2e5d-6d4c-40fa-bbe8-6829455747e2.jpg"
+        alt="img3" />
+      <img
+        src="https://images.pexels.com/photos/459302/pexels-photo-459302.jpeg?cs=srgb&dl=sea-nature-sky-459302.jpg&fm=jpg"
+        alt="img4" />
+      <img
+        src="https://images.pexels.com/photos/2245453/pexels-photo-2245453.jpeg?cs=srgb&dl=pexels-mohamedelaminemsiouri-2245453.jpg&fm=jpg"
+        alt="img5" />
+      <img src="https://wallpapercave.com/wp/iHFFnlB.jpg" alt="img6" />
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div>
+      <h2>Contact</h2>
+      <p>WHERE I WORK</p>
+      <p>I'd love your feedback!</p>
+    </div>
+    <div>
+      <p><i class="fa-solid fa-location-dot"></i>Pune,Maharashtra</p>
+      <p><i class="fa-solid fa-phone"></i>+91 3224863638</p>
+      <p><i class="fa-solid fa-envelope"></i>journeyplus@gmail.com</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <a href="#">Back to top</a>
+    <p>&copy; 2025 My Website | Powered by Vaishnavi</p>
+  </footer>
+</body>
+
+</html>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background: url('https://images.unsplash.com/photo-1623512182063-d2448e0f1cf9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  height: 60vh;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.hero {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.hero h1 {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+    .skills {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: left;
+    }
+
+    .skill-bar {
+      margin-bottom: 15px;
+    }
+
+    .skill-bar span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .bar {
+      background: #ddd;
+      height: 10px;
+      border-radius: 5px;
+    }
+
+    .bar-fill {
+      height: 10px;
+      background: #555;
+      border-radius: 5px;
+    }
+
+    .stats {
+      background: #555;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+    }
+    .background{
+    background-image: url(https://images.unsplash.com/photo-1749067560792-8b72e32d3f8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3N3x8fGVufDB8fHx8fA%3D%3D);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+    .overlay {
+    background-color: rgba(254, 246, 246, 0.745);
+     height: 200px;
+     position: relative;
+}
+    .content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+.about-content img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .about-content img {
+    margin-bottom: 0;
+  }
+}
